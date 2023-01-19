@@ -6,19 +6,90 @@
     5. Otros
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 $color-primario:#323643;
 $color-secundario:#606470;
 $color-terciario:#93DEFF;
 $color-acentuar:#F7F7F7;
+$font-family-tittle: 'Anton', sans-serif;
+$font-family-content: 'Roboto', sans-serif;          /* Content */
+
 
 html{
     font-size: 62.2%;
 }
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
 }
 body{
+    font-family: $font-family-content;
     font-size: 1.5rem;
+    background-color: $color-primario;
+}
+nav{
+    background-color: $color-secundario;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 90px;
+    height: 100%;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(147, 222, 255, 0.3);
+    
+    &:hover{
+        transition: all 0.4s ease;
+        width: 280px;
+    }
+    &:hover .logo {
+        transition: width 0.4s ease;
+
+        img{
+            transform: translateX(95px);
+            transition: transform 0.8s ease;
+        }
+    }
+
+    .logo{
+        display: flex;
+        text-align: center;
+        
+        transition: all 0.5s ease;
+        
+        img{
+            width: 70px;
+            height: auto;
+        }
+    }
+}
+a{
+    display: table;
+    position: relative;
+    color: $color-terciario;
+    font-size: 14px;
+    width: 300px;
+    padding: 10px;
+
+    &:hover{
+        background-color: $color-primario;
+    }
+}
+.fas, .fa-solid{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+.nav-item{
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
 }
