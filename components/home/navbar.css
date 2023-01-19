@@ -24,11 +24,12 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   background-color: #323643;
+  display: flex;
+  justify-content: space-between;
 }
-
 nav {
   background-color: #606470;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   width: 90px;
@@ -36,6 +37,7 @@ nav {
   overflow: hidden;
   transition: width 0.2s linear;
   box-shadow: 0 20px 35px rgba(147, 222, 255, 0.3);
+  z-index: 10;
 }
 nav:hover {
   transition: all 0.4s ease;
