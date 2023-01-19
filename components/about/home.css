@@ -1,0 +1,82 @@
+/*
+    1. Posicionamiento
+    2. Modelo de caja
+    3. Tipografia
+    4. Visuales
+    5. Otros
+*/
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+/* Content */
+html {
+  font-size: 62.2%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  background-color: #323643;
+}
+
+main {
+  width: 100%;
+  margin-left: 90px;
+  overflow: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.container__home {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container__home-img {
+  max-width: 250px;
+  max-height: 250px;
+  border: 1px solid #93DEFF;
+  border-radius: 50%;
+  margin: 4rem;
+}
+.container__home-description {
+  max-width: 80%;
+  padding: 8px;
+  border-radius: 1rem;
+  color: #F7F7F7;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.container__home-description p:nth-child(2) {
+  -webkit-text-stroke: 0.05rem #323643;
+  color: #93DEFF;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .container__home {
+    flex-direction: row;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */
