@@ -1,0 +1,26 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "portafolio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ospinajuanp/Portafolio.git"
+  },
+  "keywords": [
+    "portafolio"
+  ],
+  "author": "ospinajuanp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ospinajuanp/Portafolio/issues"
+  },
+  "homepage": "https://github.com/ospinajuanp/Portafolio#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "sass": "^1.57.1"
+  }
+}
