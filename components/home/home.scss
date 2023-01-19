@@ -1,0 +1,34 @@
+/*
+    1. Posicionamiento
+    2. Modelo de caja
+    3. Tipografia
+    4. Visuales
+    5. Otros
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+$color-primario:#323643;
+$color-secundario:#606470;
+$color-terciario:#93DEFF;
+$color-acentuar:#F7F7F7;
+$font-family-tittle: 'Anton', sans-serif;
+$font-family-content: 'Roboto', sans-serif;          /* Content */
+
+
+html{
+    font-size: 62.2%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: $font-family-content;
+    font-size: 1.5rem;
+    background-color: $color-primario;
+}

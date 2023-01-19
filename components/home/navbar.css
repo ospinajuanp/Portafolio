@@ -1,0 +1,88 @@
+/*
+    1. Posicionamiento
+    2. Modelo de caja
+    3. Tipografia
+    4. Visuales
+    5. Otros
+*/
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+/* Content */
+html {
+  font-size: 62.2%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  background-color: #323643;
+}
+
+nav {
+  background-color: #606470;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 90px;
+  height: 100%;
+  overflow: hidden;
+  transition: width 0.2s linear;
+  box-shadow: 0 20px 35px rgba(147, 222, 255, 0.3);
+}
+nav:hover {
+  transition: all 0.4s ease;
+  width: 280px;
+}
+nav:hover .logo {
+  transition: width 0.4s ease;
+}
+nav:hover .logo img {
+  transform: translateX(95px);
+  transition: transform 0.8s ease;
+}
+nav .logo {
+  display: flex;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+nav .logo img {
+  width: 70px;
+  height: auto;
+}
+
+a {
+  display: table;
+  position: relative;
+  color: #93DEFF;
+  font-size: 14px;
+  width: 300px;
+  padding: 10px;
+}
+a:hover {
+  background-color: #323643;
+}
+
+.fas, .fa-solid {
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 14px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.nav-item {
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+}
+
+/*# sourceMappingURL=navbar.css.map */
