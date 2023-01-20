@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./navbar.css">
     <link rel="stylesheet" href="./home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -43,7 +44,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#container__contact">
                             <i class="fa-solid fa-address-book"></i>
                             <span class="nav-item">Contact me</span>
                         </a>
@@ -182,6 +183,44 @@
 
 
         </section>
+
+        <section id="container__contact" class="container__contact">
+            <div class="container__contact-form">
+                <form onsubmit="sendEmail(); reset(); return false;">
+                    <h3>Get in touch</h3>
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Email Id" required>
+                    <input type="text" id="phone" placeholder="Phone No." required>
+                    <textarea id="message" rows="4" placeholder="How can I contact you?"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <div class="container__contact-redes">
+                <a href="https://www.linkedin.com/in/ospinajuanp/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                
+                <a href="https://github.com/ospinajuanp" target="_blank">
+                    <i class="fa-brands fa-github-alt"></i>
+                </a>
+
+                <a href="https://twitter.com/OspinaJuanP" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+
+                <a href="https://www.instagram.com/ospinajuanp/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.facebook.com/OspinaJuanP/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+
+        </section>
+        
     </main>
+    
+    <script src="./contact.js"></script>
 </body>
 </html>

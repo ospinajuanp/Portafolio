@@ -32,3 +32,94 @@ body{
     font-size: 1.5rem;
     background-color: $color-primario;
 }
+
+.container__contact{
+    width: 100%;
+    height: auto;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    background-color: $color-secundario;
+
+    &-form{
+        width: 100%;
+        max-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        form{
+            width: 90%;
+            max-width: 600px;
+            padding: 2vw 4vw;
+            display: flex;
+            flex-direction: column;
+            background-color: $color-primario;
+            border-radius: 1rem;
+
+            h3{
+                color: $color-terciario;
+                font-weight:800 ;
+                margin-bottom: 2rem;
+            }
+
+            input, textarea{
+                border: 0;
+                margin: 1rem 0;
+                padding: 2rem;
+                outline: none;
+                font-size: 1.6rem;
+                background-color: $color-acentuar;
+            }
+            
+            button{
+                width: 15rem;
+                margin: 2rem auto 0;
+                padding: 1.5rem;
+                border-radius: 3rem;
+                font-size: 1.6rem;
+                color: $color-primario;
+                border: 0;
+                outline: none;
+                cursor: pointer;
+                background: $color-terciario;
+            }
+        }
+
+    }
+    &-redes{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color:  $color-primario;
+        max-width: 600px;
+
+        a:hover{
+            background-color: $color-terciario;
+        }
+    }
+    
+    a:link, a:visited, a:active, a:hover{
+        text-decoration:none;
+        .fa-linkedin {
+            color: #0a66c2;
+        }
+        .fa-github-alt {
+            color: #161b22;
+        }
+        .fa-twitter {
+            color: #1d9bf0;
+        }
+        .fa-instagram {
+            color: #000;
+        }
+        .fa-facebook {
+            color: #2374e1;
+        }
+    }
+
+}

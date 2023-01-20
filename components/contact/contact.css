@@ -26,4 +26,86 @@ body {
   background-color: #323643;
 }
 
+.container__contact {
+  width: 100%;
+  height: auto;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  background-color: #606470;
+}
+.container__contact-form {
+  width: 100%;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container__contact-form form {
+  width: 90%;
+  max-width: 600px;
+  padding: 2vw 4vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #323643;
+  border-radius: 1rem;
+}
+.container__contact-form form h3 {
+  color: #93DEFF;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+.container__contact-form form input, .container__contact-form form textarea {
+  border: 0;
+  margin: 1rem 0;
+  padding: 2rem;
+  outline: none;
+  font-size: 1.6rem;
+  background-color: #F7F7F7;
+}
+.container__contact-form form button {
+  width: 15rem;
+  margin: 2rem auto 0;
+  padding: 1.5rem;
+  border-radius: 3rem;
+  font-size: 1.6rem;
+  color: #323643;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  background: #93DEFF;
+}
+.container__contact-redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #323643;
+  max-width: 600px;
+}
+.container__contact-redes a:hover {
+  background-color: #93DEFF;
+}
+.container__contact a:link, .container__contact a:visited, .container__contact a:active, .container__contact a:hover {
+  text-decoration: none;
+}
+.container__contact a:link .fa-linkedin, .container__contact a:visited .fa-linkedin, .container__contact a:active .fa-linkedin, .container__contact a:hover .fa-linkedin {
+  color: #0a66c2;
+}
+.container__contact a:link .fa-github-alt, .container__contact a:visited .fa-github-alt, .container__contact a:active .fa-github-alt, .container__contact a:hover .fa-github-alt {
+  color: #161b22;
+}
+.container__contact a:link .fa-twitter, .container__contact a:visited .fa-twitter, .container__contact a:active .fa-twitter, .container__contact a:hover .fa-twitter {
+  color: #1d9bf0;
+}
+.container__contact a:link .fa-instagram, .container__contact a:visited .fa-instagram, .container__contact a:active .fa-instagram, .container__contact a:hover .fa-instagram {
+  color: #000;
+}
+.container__contact a:link .fa-facebook, .container__contact a:visited .fa-facebook, .container__contact a:active .fa-facebook, .container__contact a:hover .fa-facebook {
+  color: #2374e1;
+}
+
 /*# sourceMappingURL=contact.css.map */
