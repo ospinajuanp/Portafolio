@@ -32,3 +32,107 @@ body{
     font-size: 1.5rem;
     background-color: $color-primario;
 }
+
+.container__works{
+    width: 100%;
+    height: auto;
+    padding: 4rem;
+
+    &-tittle{
+        color: $color-terciario;
+        font-size: 2.4rem;
+        h2{
+            font-weight: 800;
+        }
+    }
+    &-content{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4rem;
+        padding: 4rem 0;
+    }
+}
+
+.project__card{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: .8rem;
+    background-color: $color-secundario;
+    
+    &-img{
+        max-width: 80px;
+        max-height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: $color-acentuar;
+        min-width: 80px;
+        
+        img{            
+            width: auto;
+            height: 100%;
+        }
+    }
+
+    &-name{
+        color: $color-acentuar;
+    }
+
+    &-technology{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &-link{
+        position: relative;
+        width: 100%;
+        padding: .4rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.button__project{
+    width: auto;
+    padding: .8rem;
+    margin: 0 .4rem;
+    border-radius: 0.4rem;
+    border: 0.1rem solid $color-terciario;
+    color: $color-terciario;
+    cursor: pointer;
+    
+    &:hover{
+        color: $color-secundario;
+        background-color: $color-terciario;
+    }
+}
+.fa-brands{
+    margin: 0 1rem;
+    padding: 0;
+    font-size: 3rem;
+}
+.fa-html5:hover{
+color: #e34c26 ;
+}
+.fa-css3-alt:hover{
+color: #0074d9 ;
+}
+.fa-square-js:hover{
+color: #F0DB4F ;
+}
+.fa-sass:hover{
+color: #F06292 ;
+}
+.fa-npm:hover{
+color: #D50000 ;
+}
