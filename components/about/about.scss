@@ -43,11 +43,10 @@ main{
 .container__about{
     width: 100%;
     max-height: auto;
-    min-height: 80vh;
-    padding: 0 4rem;
-    margin: 4rem 0;
+    min-height: 40vh;
+    padding: 4rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 8rem 1fr;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     justify-content: center;
     align-items: center;
@@ -57,7 +56,12 @@ main{
     
     .grid__item-one{
         height: 8rem;
+    }
+    .grid__item-one,.grid__item-two,.grid__item-three{
+        width: 100%;
+        height: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
@@ -68,7 +72,7 @@ main{
 
     &-item{
         min-width: 250px;
-        max-width: 380px;
+        max-width: 90%;
     }
     
     &-tittle{
@@ -103,7 +107,7 @@ main{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 4rem;
+        padding-bottom: 4rem;
         
         h2{
             font-size: 2.8rem;
