@@ -130,7 +130,9 @@ body {
 .fa-npm:hover {
   color: #D50000;
 }
-
+.fa-font-awesome:hover{
+  color: #146ebe;
+}
 .container__works-technology {
   width: 100%;
   height: auto;
@@ -156,12 +158,16 @@ body {
   background-color: #606470;
   border-radius: 0.4rem;
 }
+.project__card-technology .fa-font-awesome{
+  top: 5px;
+}
+
 .container__works-technology--content .fa-brands, .container__works-technology--content .fa-solid {
   margin: 0 1rem;
   padding: 0;
   font-size: 4rem;
 }
-.container__works-technology--content .fa-solid {
+.container__works-technology--content .fa-solid{
   top: 0;
 }
 .container__works-technology--content .fa-html5 {
@@ -191,6 +197,9 @@ body {
 .container__works-technology--content .fa-github {
   color: #000000;
 }
+.container__works-technology--content .fa-font-awesome {
+  color: #146ebe;
+}
 
 .tooltip {
   position: relative;
@@ -200,7 +209,7 @@ body {
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 17rem;
+  width: 18rem;
   min-width: auto;
   height: auto;
   top: -5rem;
