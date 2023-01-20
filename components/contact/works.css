@@ -1,0 +1,224 @@
+/*
+    1. Posicionamiento
+    2. Modelo de caja
+    3. Tipografia
+    4. Visuales
+    5. Otros
+*/
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+/* Content */
+html {
+  font-size: 62.2%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  background-color: #323643;
+}
+
+.container__works {
+  width: 100%;
+  height: auto;
+  padding: 4rem;
+}
+.container__works-tittle {
+  color: #93DEFF;
+  font-size: 2.4rem;
+}
+.container__works-tittle h2 {
+  font-weight: 800;
+}
+.container__works-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  padding: 4rem 0;
+}
+
+.project__card {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  background-color: #606470;
+}
+.project__card-img {
+  max-width: 80px;
+  max-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #F7F7F7;
+  min-width: 80px;
+}
+.project__card-img img {
+  width: auto;
+  height: 100%;
+}
+.project__card-name {
+  color: #F7F7F7;
+}
+.project__card-technology {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.project__card-link {
+  position: relative;
+  width: 100%;
+  padding: 0.4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button__project {
+  width: auto;
+  padding: 0.8rem;
+  margin: 0 0.4rem;
+  border-radius: 0.4rem;
+  border: 0.1rem solid #93DEFF;
+  color: #93DEFF;
+  cursor: pointer;
+}
+.button__project:hover {
+  color: #606470;
+  background-color: #93DEFF;
+}
+
+.fa-brands {
+  margin: 0 1rem;
+  padding: 0;
+  font-size: 3rem;
+}
+
+.fa-html5:hover {
+  color: #e34c26;
+}
+
+.fa-css3-alt:hover {
+  color: #0074d9;
+}
+
+.fa-square-js:hover {
+  color: #F0DB4F;
+}
+
+.fa-sass:hover {
+  color: #F06292;
+}
+
+.fa-npm:hover {
+  color: #D50000;
+}
+
+.container__works-technology {
+  width: 100%;
+  height: auto;
+  padding: 4rem;
+}
+.container__works-technology--tittle {
+  color: #93DEFF;
+  font-size: 2.4rem;
+}
+.container__works-technology--tittle h3 {
+  font-weight: 800;
+}
+.container__works-technology--content {
+  margin-top: 4rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding: 4rem 0;
+  background-color: #606470;
+  border-radius: 0.4rem;
+}
+.container__works-technology--content .fa-brands, .container__works-technology--content .fa-solid {
+  margin: 0 1rem;
+  padding: 0;
+  font-size: 4rem;
+}
+.container__works-technology--content .fa-solid {
+  top: 0;
+}
+.container__works-technology--content .fa-html5 {
+  color: #e34c26;
+}
+.container__works-technology--content .fa-css3-alt {
+  color: #0074d9;
+}
+.container__works-technology--content .fa-square-js {
+  color: #F0DB4F;
+}
+.container__works-technology--content .fa-sass {
+  color: #F06292;
+}
+.container__works-technology--content .fa-npm {
+  color: #D50000;
+}
+.container__works-technology--content .fa-ubuntu {
+  color: #dd4814;
+}
+.container__works-technology--content .fa-database {
+  color: #C0C0C0;
+}
+.container__works-technology--content .fa-terminal {
+  color: #000000;
+}
+.container__works-technology--content .fa-github {
+  color: #000000;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 17rem;
+  min-width: auto;
+  height: auto;
+  top: -5rem;
+  left: -8.5rem;
+  border: 0.1rem solid #93DEFF;
+  border-radius: 6px;
+  font-size: 2rem;
+  color: #F7F7F7;
+  text-align: center;
+  background-color: #323643;
+  padding: 5px 0;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 110;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/*# sourceMappingURL=works.css.map */
