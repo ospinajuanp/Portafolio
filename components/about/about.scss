@@ -1,0 +1,116 @@
+/*
+    1. Posicionamiento
+    2. Modelo de caja
+    3. Tipografia
+    4. Visuales
+    5. Otros
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+$color-primario:#323643;
+$color-secundario:#606470;
+$color-terciario:#93DEFF;
+$color-acentuar:#F7F7F7;
+$font-family-tittle: 'Anton', sans-serif;
+$font-family-content: 'Roboto', sans-serif;          /* Content */
+
+
+html{
+    font-size: 62.2%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: $font-family-content;
+    font-size: 1.5rem;
+    background-color: $color-primario;
+}
+main{
+    width: 100%;
+    margin-left: 90px;
+    overflow: auto;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+.container__about{
+    width: 100%;
+    max-height: auto;
+    min-height: 80vh;
+    padding: 0 4rem;
+    margin: 4rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    background-color: #606470;
+    transition: all 0.3s ease;
+    
+    .grid__item-one{
+        height: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h2{
+        font-size: 4rem;
+        
+    }
+
+    &-item{
+        min-width: 250px;
+        max-width: 380px;
+    }
+    
+    &-tittle{
+        color: $color-terciario;
+        margin-bottom: 4rem;
+        padding-top: 4rem
+    }
+    &-content{
+        color: $color-acentuar;
+    }
+    
+}
+.grid__item-one{
+    color: $color-terciario;
+    text-align: center;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+.grid__item-two{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+.grid__item-three{
+    margin-left: 4rem;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+@media (max-width: 740px) {
+    .container__about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        
+        h2{
+            font-size: 2.8rem;
+            font-weight: 800;
+        }
+    }
+    .grid__item-three{
+        margin-left: 0;
+    }
+  }
