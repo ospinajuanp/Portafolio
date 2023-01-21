@@ -68,6 +68,7 @@
   overflow: hidden;
   position: fixed;
   background-color: #323643;
+  z-index:11 ;
 }
 .ldio-y20pn62ogbd {
   width: auto;
