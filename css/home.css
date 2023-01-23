@@ -49,6 +49,22 @@ main {
   border: 1px solid #93DEFF;
   border-radius: 50%;
   margin: 4rem;
+  transform: translate(0);
+  animation: float 6s ease-in-out infinite;  
+  background-color: black;
+  box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+}
+@keyframes float {
+	0% {
+		
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }
 .container__home-description {
   max-width: 80%;
