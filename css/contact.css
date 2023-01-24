@@ -52,6 +52,8 @@ body {
   flex-direction: column;
   background-color: #323643;
   border-radius: 1rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 .container__contact-form form h3 {
   color: #93DEFF;
@@ -89,6 +91,9 @@ body {
   min-width: 9rem;
   width: 90%;
   max-width: 600px;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  
 }
 .container__contact-redes a{
   width: auto;
