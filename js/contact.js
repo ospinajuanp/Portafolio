@@ -1,9 +1,9 @@
 function sendEmail (){
   Email.send({
-    SecureToken : "778f9272-a7ca-4a14-9871-d9974d8d86dd",
+    SecureToken : "f78c1edf-555d-4bb4-8ae7-8e577d75c79c",
     To : 'juanpo996@gmail.com',
-    From : document.getElementById('email').value,
-    Subject : "This is the subject",
+    From : 'juanpo996@gmail.com',
+    Subject : `${document.getElementById('name').value}`,
     Body : 
     `Name: ${document.getElementById('name').value}
     Email: ${document.getElementById('email').value}
