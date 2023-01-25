@@ -86,5 +86,10 @@ a:hover {
   top: 12px;
   margin-left: 10px;
 }
+@media (min-width:1290px) {
+  ul li a ,.fas{
+    font-size: 3rem;
+  }
+}
 
 /*# sourceMappingURL=navbar.css.map */
