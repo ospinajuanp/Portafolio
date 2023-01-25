@@ -71,7 +71,7 @@ body {
   background-color: #F7F7F7;
   min-width: 80px;
   padding: 1px;
-  border-radius: 1px solid #F7F7F7;
+  border-radius: 1px;
 }
 .project__card-img img {
   width: auto;

@@ -37,7 +37,6 @@ main {
 
 .container__about {
   width: 100%;
-  max-height: auto;
   min-height: 40vh;
   padding: 4rem;
   display: grid;

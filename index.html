@@ -250,13 +250,13 @@
 
         <section id="container__contact" class="container__contact">
             <div class="container__contact-form">
-                <form onsubmit="sendEmail(); reset(); return false;">
+                <form onsubmit="reset(); return false;">
                     <h3>Get in touch</h3>
                     <input type="text" id="name" placeholder="Your Name" required>
                     <input type="email" id="email" placeholder="Email Id" required>
                     <input type="text" id="phone" placeholder="Phone No." required>
                     <textarea id="message" rows="4" placeholder="How can I contact you?"></textarea>
-                    <button type="submit">Send</button>
+                    <button id="sendEmail" type="submit">Send</button>
                 </form>
             </div>
             <div class="container__contact-redes">
@@ -289,6 +289,7 @@
     <footer>
         
     </footer>
+
     <script src="./js/preload.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/contact.js"></script>

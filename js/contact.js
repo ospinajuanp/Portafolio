@@ -1,4 +1,7 @@
-function sendEmail (){
+let btnSendEmail = document.getElementById('sendEmail')
+
+btnSendEmail.addEventListener('click', () => {
+  
   Email.send({
     SecureToken : "f78c1edf-555d-4bb4-8ae7-8e577d75c79c",
     To : 'juanpo996@gmail.com',
@@ -13,4 +16,5 @@ function sendEmail (){
   }).then(
     message => alert('Message Send Succesfully')
   );
-}
+
+})
