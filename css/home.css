@@ -76,69 +76,72 @@ main {
   font-weight: bold;
   text-align: start;
 }
-.container__home-description-terminal {
-  position: relative;
-  
-}
-.container__home-description-terminal::after {
-  text-align: start;
-  content: '|';
-  position: absolute;
-  right: 0;
-  color: white;
-  background-color: #323643;
-  width: 100%;
-  animation: typing 10s steps(31) infinite;
-}
-@keyframes typing {
-  100%,60%{
-    width: 0%;
-  }
-  0%{
-    width: 100%;
-  }
-}
-.container__home-description-terminal-two {
-  position: relative;
-  
-}
-.container__home-description-terminal-two::after {
-  content: '|';
-  text-align: start;  
-  position: absolute;
-  right: 0;
-  color: white;
-  background-color: #323643;
-  width: 100%;
-  animation: typingTwo 10s steps(21) infinite;
-}
 
-@keyframes typingTwo {
-  100%,90%{
-    width: 38%;
+@media (min-width: 740px) {
+  .container__home-description-terminal {
+    position: relative;
+    
   }
-  0%,62%{
-    width: 100%;
-  }
-  0%,20%,40%,60%{
-    content: '.';
-  }
-  5%,25%,45%,65%{
-    content: '..';
-  }
-  10%,30%,50%{
-    content: '...';
-  }
-  65%,70%{
+  .container__home-description-terminal::after {
+    text-align: start;
     content: '|';
+    position: absolute;
+    right: 0;
+    color: white;
+    background-color: #323643;
+    width: 100%;
+    animation: typing 10s steps(31) infinite;
   }
-
-
-
+  @keyframes typing {
+    100%{
+      content: '.';
+    }
+    22%{
+      content: '|';
+    }
+    100%,60%{
+      width: 0%;
+    }
+    0%{
+      width: 100%;
+    }
+  }
+  .container__home-description-terminal-two {
+    position: relative;
+    
+  }
+  .container__home-description-terminal-two::after {
+    content: '|';
+    text-align: start;  
+    position: absolute;
+    right: 0;
+    color: white;
+    background-color: #323643;
+    width: 100%;
+    animation: typingTwo 10s steps(21) infinite;
+  }
   
-
+  @keyframes typingTwo {
+    100%,90%{
+      width: 38%;
+    }
+    0%,62%{
+      width: 100%;
+    }
+    0%,20%,40%,60%{
+      content: '.';
+    }
+    5%,25%,45%,65%{
+      content: '..';
+    }
+    10%,30%,50%{
+      content: '...';
+    }
+    65%,70%{
+      content: '|';
+    }
+  }
 }
-
 
 .container__home-description p:nth-child(2) {
   -webkit-text-stroke: 0.05rem #323643;
