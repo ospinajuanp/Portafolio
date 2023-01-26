@@ -72,13 +72,21 @@ body {
   width: 15rem;
   margin: 2rem auto 0;
   padding: 1.5rem;
-  border-radius: 3rem;
+  border-radius: 0.4rem;
   font-size: 1.6rem;
+  font-weight: 600;
   color: #323643;
   border: 0;
   outline: none;
   cursor: pointer;
+  border: 0.1rem solid #323643;
   background: #93DEFF;
+  box-sizing: border-box;
+}
+.container__contact-form form button:hover {
+  border: 0.1rem solid #93DEFF;
+  color: #93DEFF;
+  background-color: #606470;
 }
 .container__contact-redes {
   display: flex;

@@ -99,14 +99,16 @@ body {
   padding: 0.8rem;
   margin: 0 0.4rem;
   border-radius: 0.4rem;
-  border: 0.1rem solid #F7F7F7;
-  color: #F7F7F7;
-  background-color: #000000;
+  font-weight: 600;
+  border: 0.1rem solid #323643;
+  color: #323643;
+  background: #93DEFF;
   cursor: pointer;
 }
 .button__project:hover {
-  color: #606470;
-  background-color: #93DEFF;
+  border: 0.1rem solid #93DEFF;
+  color: #93DEFF;
+  background-color: #606470;
 }
 
 .fa-brands {
