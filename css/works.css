@@ -99,8 +99,9 @@ body {
   padding: 0.8rem;
   margin: 0 0.4rem;
   border-radius: 0.4rem;
-  border: 0.1rem solid #93DEFF;
-  color: #93DEFF;
+  border: 0.1rem solid #F7F7F7;
+  color: #F7F7F7;
+  background-color: #000000;
   cursor: pointer;
 }
 .button__project:hover {
