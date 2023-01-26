@@ -151,6 +151,7 @@ body {
 }
 .container__works-technology--content {
   margin-top: 4rem;
+  min-width:9rem;
   width: 100%;
   height: auto;
   display: flex;
